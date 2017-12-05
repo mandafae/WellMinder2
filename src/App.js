@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Route } from 'react-router-dom'
 import Navbar from './components/navbar'
 import Dashboard from './components/dashboard'
 import Landing from './components/landing'
@@ -11,10 +12,10 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
-        <Dashboard />
-        <Landing />
-        <Preferences />
-        <Quiz />
+        <Route exact path='/' component={Landing}/>
+        <Route path='/dashboard' component={Dashboard} />
+        <Route path='/preferences' component={Preferences}/>
+        <Route path='/checkin' component={Quiz} />
       </div>
     );
   }
