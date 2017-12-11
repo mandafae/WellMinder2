@@ -24,13 +24,13 @@ Welcome! Wellminder is a full stack, responsive web application built with React
 
 
 ## Challenges
-This is the first non-trivial full stack React application that any of us have built, and it came with it's fair share of challenges. Here are a few of them and how we conquered them:
+This is the first non-trivial full stack React application that any of us have built, and it came with its fair share of challenges. Here are a few of them and how we conquered them:
 
 1. Successfully passing state from parent to child React components (and more importantly back from children to their parent).
 - ‘this’ binding on the parent component was particularly helpful, as well as passing the state to the children components as props.
 
 2. Whether to use Redux to assist us in state management or not.
-- We decided against Redux because our app only has one parent component and 5 children components, all siblings. If our app went down one or two more levels it would have made more since to use Redux, but since it was just two levels total we decided Redux would have been unnecessary and/or more confusing than helpful.
+- We decided against Redux because our app only has one parent component and 5 children components, all siblings. If our app went down one or two more levels it would have made more sense to use Redux, but since it was just two levels total we decided Redux would have been unnecessary and/or more confusing than helpful.
 
 3. Getting D3 plugged into/playing nicely with our React code.
 
